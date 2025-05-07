@@ -7,7 +7,7 @@ const app = express();
 connectToDB()
 app.use(express.json());
 /* app.use('/api/items', itemRoutes); */
-app.use('/api/blog', blogRoutes)
+app.use('/api/blogs', blogRoutes)
 
 app.use(errorHandler);
 
