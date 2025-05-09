@@ -6,7 +6,7 @@ const blogControllers = new BlogControllers()
 
 router.get('/', blogControllers.fetchListOfBlog);
 router.get('/:id', blogControllers.getABlog);
-router.post('/add/', blogControllers.addNewBlog);
+router.post('/add', blogControllers.addNewBlog);
 router.put('/update/:id', blogControllers.updateABlog);
 router.delete('/delete/:id', blogControllers.deleteABlog);
 

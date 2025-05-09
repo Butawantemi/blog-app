@@ -45,7 +45,7 @@ export class BlogControllers {
       await session.commitTransaction();
       session.endSession();
   
-      res.status(201).json({ newlyCreatedBlog });
+      res.status(200).json({ newlyCreatedBlog });
       return;
     } catch (error) {
       await session.abortTransaction();
